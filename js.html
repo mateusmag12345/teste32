@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Document</title>
+</head>
+<body>
+<style type="text/css">
+
+html, body
+{
+width: 100%
+height: 100%
+}
+
+body
+{
+display: flex;
+align-items: center;
+justify-content: center;
+
+background-image: url("imagem/ww.jpg");
+background-repeat: no-repeat;
+background-size: 100%;
+}
+
+
+
+
+
+
+
+
+.teste1
+{
+display: flex;
+justify-content: center;
+border-style: solid;
+width: 360px;
+font-size: 15px;
+background-color: #ffffff00;
+border-radius: 40px;
+height: 270px;
+padding: 20px;
+color: white ;
+flex-direction: column;
+}
+
+.teste2
+{
+display: flex;
+justify-content: center;
+padding: 10px;
+}
+
+
+.ouro 
+{
+display: flex;
+justify-content: center;
+}
+
+
+
+
+</style>
+
+<div class="ouro">
+
+
+
+<div class="teste1">
+
+
+
+
+
+
+
+
+
+
+<h1>LOGIN</h1>
+<h3>Usuario</h3>
+<input id="Usuario_input" type="text"placeholder="LOGIN" =>
+<h3>Senha</h3>
+<input id="Senha_input" type="password" placeholder="Senha"=>
+   
+<div class="teste2">
+	
+<button onclick="Teste()">Entra</button>
+
+</div>
+</div>
+
+
+
+</body>
+
+
+<script type="text/JavaScript">
+    function Teste() 
+        {
+            var a = document.getElementById("Usuario_input").value;
+            var b = document.getElementById("Senha_input").value;
+    
+            if ( a == "mts06" & b == 2011 ) 
+            {
+            alert("muito bom!");
+            window.location.href = "index.html";
+            }
+            else 
+            {
+            alert("muito ruim!");
+            }
+    
+        }
+    
+    </script>
+
+</html>
